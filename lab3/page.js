@@ -9,7 +9,7 @@ for(index = 0; index < myList.length; index++){
 
     existingSpanTag.className = "close";
     existingSpanTag.appendChild(existingTxt);
-    myList[index].appendChild(existingSpanTag);
+    myList[index].appendChild(existingSpanTag); 
 }
 
 // Close Button 
@@ -38,7 +38,7 @@ function createNewElement(){
         document.getElementById("the_ul").appendChild(li);
     }
 
-    theInputValue.value = "";
+    document.getElementById("the_input").value = "";
     
     var theSpanTag = document.createElement("span");
     var txt = document.createTextNode("\u00D7");// putting x sign to a close button
